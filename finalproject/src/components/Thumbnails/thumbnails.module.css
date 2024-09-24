@@ -1,0 +1,79 @@
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed from center to flex-start for better alignment */
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Reset margin to remove default spacing */
+}
+
+.list li {
+    margin: 0.5rem; /* Space between list items */
+}
+
+.list li a {
+    height: 22.5rem;
+    width: 20rem;
+    border: 1px solid #e0e0e0; /* Lightened the border color for better contrast */
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+    position: relative; /* Relative positioning to better align content */
+    background-color: white; /* Added background color */
+    text-decoration: none; /* Removed underline from links */
+}
+
+.image {
+    object-fit: cover;
+    width: 100%; /* Ensure the image covers the entire width */
+    height: 14.5rem;
+}
+
+.content {
+    padding: 0.5rem 1rem;
+    flex-grow: 1; /* Allows content area to expand as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space evenly */
+    position: relative;
+}
+
+.favorite {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    color: #e72929; /* Default color for favorite icon */
+    cursor: pointer; /* Changes cursor to pointer for better UX */
+}
+
+.favorite.not {
+    color: grey;
+}
+
+.stars {
+    margin: 0.5rem 0;
+    display: flex; /* Flex display for better alignment */
+    justify-content: center; /* Center the stars */
+}
+
+.product_item_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns items at the center */
+}
+
+.price {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.9rem;
+    background-color: white;
+    padding: 0.3rem 0.5rem;
+    color: #414141;
+    font-size: 1.1rem;
+}
+
+  
